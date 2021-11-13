@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "i-dian": {
+      "hosting": {
+        "app": [
+          "i-dian"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "i-dian"
+  }
+}

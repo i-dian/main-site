@@ -1,0 +1,23 @@
+.logo-img {
+  animation: pulse 3s infinite;
+}
+.logo-text {
+  animation: goldShine 5s infinite;
+}
+.img-container {
+  text-align: center;
+  margin-top: 20px;
+  img {
+    width: 70%;
+  }
+}
+
+ion-col {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.space {
+  height: 100px;
+}
+

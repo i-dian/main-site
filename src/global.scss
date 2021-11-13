@@ -24,3 +24,77 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "~swiper/css";
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: none;
+  }
+
+  5%, 25% {
+    transform: scale(0.9, 0.9);
+  }
+
+  15%, 35% {
+    transform: scale(1.1, 1.1);
+  }
+
+  40% {
+    transform: none;
+  }
+
+}
+
+@keyframes colorForGold {
+  0% {
+  }
+  5%,25% {
+    text-shadow: -4px -10px 10px yellow,
+    -10px 0px 10px yellow,
+    -10px 10px 10px white;
+  }
+  15%,35% {
+    text-shadow: 4px 10px 10px white,
+    10px 0px 10px yellow,
+    10px -10px 10px yellow;
+  }
+  40% {
+    text-shadow: none;
+  }
+}
+@keyframes goldShine {
+  0% {
+  }
+  5%,25% {
+    text-shadow: -4px -10px 10px yellow,
+    -10px 0px 10px yellow,
+    -10px 20px 10px red;
+  }
+  15%,35% {
+    text-shadow: 4px 20px 10px red,
+    10px 0px 10px yellow,
+    10px -10px 10px green;
+  }
+  40% {
+    text-shadow: none;
+  }
+}
+@keyframes pulseForBackToWishPool {
+  0%, 100% {
+    transform: none;
+  }
+
+  5%, 25% {
+    transform: rotate(-20deg);
+  }
+
+  15%, 35% {
+    transform: rotate(20deg);
+  }
+
+  40% {
+    transform: none;
+  }
+
+}
