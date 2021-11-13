@@ -1,0 +1,7 @@
+{
+  "name": "i-dian",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
