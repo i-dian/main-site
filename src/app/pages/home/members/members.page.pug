@@ -1,99 +1,115 @@
 doctype html
 ion-header
   ion-toolbar(color='dark')
-    ion-title 👍 團隊
-ion-content
-  swiper(
-    [slidesPerView]="1.35",
-    [spaceBetween]="20",
-    [slidesOffsetBefore]="10"
+    ion-title 👍 艾點團隊
+ion-content([appParallax]="para", scrollEvents="true" )
+  .parallax-container(#para)
+    h2.logo-text.ion-text-center
+      ion-text(color='primary') 艾點
+      | 軟體整合設計有限公司
+    .img-container
+      img.logo-img(src='./assets/images/logo.png')
+  .my-content
+    h1 👨‍🔧 成員 👨‍🔧
+    swiper(
+      [slidesPerView]="1.35",
+      [spaceBetween]="20",
+      [slidesOffsetBefore]="10"
 
-  )
-    ng-template(swiperSlide)
-      .container
-        ion-item(lines="none").title
-          ion-avatar(slot='start')
-            img(src='https://i.imgur.com/q6F4SdX.jpg')
-          ion-label 執行長
-            p Jason Lee
-        .ion-padding-start
-          h2 ⚙️ 專長：
-          ion-row
-            ion-label ✅ a.資源整合
-          ion-row
-            ion-label ✅️ b.異業聯盟
-          ion-row
-            ion-label ✅ c.行銷策略執行
-          ion-row
-            ion-label ✅ d.財稅 法律規劃
-          ion-row
-            ion-label ✅ e.信託整合規劃
-        .ion-padding-start
-          h2 👨‍💻 經歷：
-          ion-row
-            ion-label ✔️ 金融財稅經理人
-              p (人壽 銀行)
-          ion-row
-            ion-label ✔️️ 傳產專業經理人
-              p (3C)
+    )
+      ng-template(swiperSlide)
+        .container
+          ion-item(lines="none")
+            ion-avatar(slot='start')
+              img(src='https://i.imgur.com/q6F4SdX.jpg')
+            ion-label 執行長
+              p Jason Lee
+          ion-button.contact-ceo.ion-margin(expand='block', fill='outline', (click)='openCEOModalAsync()')
+            ion-icon(name='people', slot='start')
+            | 聯絡我
+          .ion-padding-start
+            h2 ⚙️ 專長：
+            ion-row
+              ion-label ✅ 資源整合
+            ion-row
+              ion-label ✅️ 異業聯盟
+            ion-row
+              ion-label ✅ 行銷策略執行
+            ion-row
+              ion-label ✅ 財稅 法律規劃
+            ion-row
+              ion-label ✅ 信託整合規劃
+          .ion-padding-start
+            h2 👨‍💻 經歷：
+            ion-row.ion-text-left
+              ion-label ✔️ 金融財稅經理人
+                p (人壽 銀行)
+            ion-row.ion-text-left
+              ion-label ✔️️ 傳產專業經理人
+                p (3C)
 
-          ion-row
-            ion-label ✔️ 資產規劃專任講師
-              p ( 資產 遺囑 信託 )
+            ion-row.ion-text-left
+              ion-label ✔️ 資產規劃專任講師
+                p ( 資產 遺囑 信託 )
+          br
 
-    ng-template(swiperSlide)
-      .container
-        ion-item(lines="none").title
-          ion-avatar(slot='start')
-            img(src='https://i.imgur.com/Ucqu4eS.jpg')
-          ion-label 總工程師
-            p Nick Hsieh
-        .ion-padding-start
-          h2 💻️ 負責項目：
-          ion-row
-            ion-label 💡 App多系統開發整合
-          ion-row
-            ion-label 💡 資料庫與伺服器架設連結
-          ion-row
-            ion-label 💡 技術顧問，客戶需求評估
-          ion-row
-            ion-label 💡 軟體工程規劃
-        .ion-padding-start
-          h2 👨‍ 擅長技術：
-          ion-row
-            ion-label 💥 Android, iOS App開發
-              p (使用Kotlin, Swift等等語言)
-          ion-row
-            ion-label 💥 全線開發技術
-              p (Node.js, Firebase, MongoDB)
-          ion-row
-            ion-label 💥 各種前端框架
-              p (Angular, React, Vue)
-          ion-row
-            ion-label 💥 雲端以及Serverless
-              p (AWS, Firebase, Azure, 阿里雲)
 
-          ion-row
-            ion-label 💥 機器學習，區塊鏈，以太坊
-              p ( ML, BlockChain, Ethereum )
-    ng-template(swiperSlide)
-      .container
-        ion-item(lines="none").title
-          ion-avatar(slot='start')
-            img(src='https://i.imgur.com/Kh9INyV.jpg')
-          ion-label 助理工程師
-            p Tony Chang
-        .ion-padding-start
-          h2  😀 負責項目：
-          ion-row
-            ion-label ⏰ 協助總工程師開發細節
-              p 同時也全力協助客戶
-          ion-row
-            ion-label ⏰ 提供客服對接窗口
-              p 第一時間回覆客戶需求
-          ion-row
-            ion-label ⏰ 24小時待命滿足客戶需求
-              p 白天黑夜隨傳隨到
-          ion-row
-            ion-label ⏰ 提供基本維修
-              p 無法處理則上交至總工程師
+      ng-template(swiperSlide)
+        .container
+          ion-item(lines="none").title
+            ion-avatar(slot='start')
+              img(src='https://i.imgur.com/Ucqu4eS.jpg')
+            ion-label 總工程師
+              p Nick Hsieh
+          .ion-padding-start
+            h2 💻️ 負責項目：
+            ion-row
+              ion-label 💡 App多系統開發整合
+            ion-row
+              ion-label 💡 資料庫與伺服器架設連結
+            ion-row
+              ion-label 💡 技術顧問，客戶需求評估
+            ion-row
+              ion-label 💡 軟體工程規劃
+          .ion-padding-start
+            h2 👨‍ 擅長技術：
+            ion-row
+              ion-label 💥 Android, iOS App開發
+                p (使用Kotlin, Swift等等語言)
+            ion-row.ion-text-left
+              ion-label 💥 全線開發技術
+                p (Node.js, Firebase, MongoDB)
+            ion-row.ion-text-left
+              ion-label 💥 各種前端框架
+                p (Angular, React, Vue)
+            ion-row.ion-text-left
+              ion-label 💥 雲端以及Serverless
+                p (AWS, Firebase, Azure, 阿里雲)
+
+            ion-row
+              ion-label.ion-text-left 💥 機器學習，區塊鏈，以太坊
+                p ( ML, BlockChain, Ethereum )
+            .space
+      ng-template(swiperSlide)
+        .container
+          ion-item(lines="none").title
+            ion-avatar(slot='start')
+              img(src='https://i.imgur.com/Kh9INyV.jpg')
+            ion-label 助理工程師
+              p Tony Chang
+          .ion-padding-start
+            h2  😀 負責項目：
+            ion-row.ion-text-left
+              ion-label ⏰ 協助總工程師開發細節
+                p 同時也全力協助客戶
+            ion-row.ion-text-left
+              ion-label ⏰ 提供客服對接窗口
+                p 第一時間回覆客戶需求
+            ion-row.ion-text-left
+              ion-label ⏰ 24小時待命滿足客戶需求
+                p 白天黑夜隨傳隨到
+            ion-row.ion-text-left
+              ion-label ⏰ 提供基本維修
+                p 無法處理則上交至總工程師
+            .space2
+  .space

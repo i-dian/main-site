@@ -2,7 +2,18 @@
   animation: pulse 3s infinite;
 }
 .logo-text {
-  animation: goldShine 5s infinite;
+  //animation: goldShine 5s infinite;
+}
+.my-content {
+  background: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid rgba(201, 159, 159, 0.44);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.parallax-container {
 }
 .img-container {
   text-align: center;

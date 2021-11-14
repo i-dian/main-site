@@ -1,0 +1,52 @@
+doctype html
+ion-header
+  ion-toolbar(color='primary')
+    ion-title Jason Lee
+    ion-buttons(slot='end')
+      ion-button(fill='solid', shape='round',size='large', color='primary', (click)='closeIt()').close-btn
+        ion-icon(name='close-circle-outline', slot='icon-only')
+ion-content([appParallax]='imgContainer', scrollEvents='true')
+  .img-container(#imgContainer)
+    .img-title
+      | 👨‍💼 執行長：Jason Lee
+    .img([style.background-image]="'url(' + 'https://i.imgur.com/q6F4SdX.jpg' + ')'")
+  .my-content
+    br
+    br
+    br
+    .title-container
+      h1 👨‍💼 詳細資訊如下
+    br
+    br
+    br
+    .info-container
+      .my-row
+        .field 😀 職位
+        .value 執行長
+      .my-row
+        .field 🏢 所屬公司
+        .value 艾點軟體整合設計有限公司
+      .my-row
+        .field 📲 手機
+        .value 0926-647-535
+      .my-row
+        .field ☎️ 市內電話
+        .value 02-2226-9638
+      .my-row
+        .field 💚 Line ID:
+        .value tjlp1964
+      .my-row
+        .field 📨 Email:
+        .value tjlp19640904@gmail.com
+      .my-row
+        .field 🏡 住址:
+        .value 新北市中和區中原二街125號20樓
+    br
+    br
+
+    .btn-container
+      ion-button(expand='block', fill='outline',(click)='closeIt()').back-btn
+        ion-icon(name='people-outline')
+        | 返回成員頁面
+
+

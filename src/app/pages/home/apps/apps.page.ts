@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AlertService} from "../../../common/services/alert.service";
 
 @Component({
   selector: 'app-apps',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private alertService: AlertService
+  ) { }
 
   ngOnInit() {
   }
+  appDownloadClicked() {
+    this.alertService.presentAppNotAvailableAsync();
 
+  }
 }

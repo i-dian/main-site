@@ -2,46 +2,49 @@ doctype html
 ion-header
   ion-toolbar(color='dark')
     ion-title 營業項目
-ion-content
-  h2.logo-text.ion-text-center
-    ion-label(color='danger') 艾點
-    | 軟體整合設計有限公司
-  .img-container
-    img.logo-img(src='./assets/images/logo.png')
-  ion-row
-    ion-col
-      .ion-text-center 📲 手機App多系統開發
-  ion-row
-    ion-col
-      .ion-text-center 💾 資訊軟體零售業
-  ion-row
-    ion-col
-      .ion-text-center 🏝️ 資訊軟體服務業
-  ion-row
-    ion-col
-      .ion-text-center 🏡 資料處理服務業
-  ion-row
-    ion-col
-      .ion-text-center 😀 資訊軟體批發業
-  ion-row
-    ion-col
-      .ion-text-center 🔌 電子資訊供應服務
-  ion-row
-    ion-col
-      .ion-text-center 💰 第三方支付服務業
-  ion-row
-    ion-col
-      .ion-text-center 🎮 實境體感應用服務
-  ion-row
-    ion-col
-      .ion-text-center 📚 圖書出版業
-  ion-row
-    ion-col
-      .ion-text-center 💽 軟體出版業
-  ion-row
-    ion-col
-      .ion-text-center 🍎 其他出版業
+ion-content([appParallax]="para", scrollEvents="true" )
+  .parallax-container(#para)
+    h2.logo-text.ion-text-center
+      ion-label(color='danger') 艾點
+      | 軟體整合設計有限公司
+    .img-container
+      img.logo-img(src='./assets/images/logo.png')
+  .divider
+  .my-content
+    ion-row
+      ion-col
+        .ion-text-center 📲 手機App多系統開發
+    ion-row
+      ion-col
+        .ion-text-center 💾 資訊軟體零售業
+    ion-row
+      ion-col
+        .ion-text-center 🏝️ 資訊軟體服務業
+    ion-row
+      ion-col
+        .ion-text-center 🏡 資料處理服務業
+    ion-row
+      ion-col
+        .ion-text-center 😀 資訊軟體批發業
+    ion-row
+      ion-col
+        .ion-text-center 🔌 電子資訊供應服務
+    ion-row
+      ion-col
+        .ion-text-center 💰 第三方支付服務業
+    ion-row
+      ion-col
+        .ion-text-center 🎮 實境體感應用服務
+    ion-row
+      ion-col
+        .ion-text-center 📚 圖書出版業
+    ion-row
+      ion-col
+        .ion-text-center 💽 軟體出版業
+    ion-row
+      ion-col
+        .ion-text-center 🍎 其他出版業
 
 
 
-  .space
+    .space

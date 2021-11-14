@@ -23,4 +23,50 @@ ion-label {
 .title {
   animation: pulse 5s infinite;
 }
+.contact-ceo {
+  animation: shake 2s infinite;
 
+}
+
+ion-title {
+  //animation: colorForGold 8s infinite;
+}
+
+.logo-img {
+  animation: pulse 4s infinite;
+}
+.logo-text {
+  //animation: goldShine 5s infinite;
+}
+.my-content {
+  background: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid rgba(201, 159, 159, 0.44);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.parallax-container {
+}
+.img-container {
+  text-align: center;
+  margin-top: 20px;
+  img {
+    width: 70%;
+  }
+}
+
+.swiper-slide {
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+.space {
+  height: 100px;
+}
+
+.space2 {
+  height: 400px;
+}

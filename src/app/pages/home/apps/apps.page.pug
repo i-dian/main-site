@@ -1,0 +1,28 @@
+doctype html
+ion-header
+  ion-toolbar(color='primary')
+    ion-title 👍 App下載
+ion-content([appParallax]="para", scrollEvents="true" )
+  .parallax-container(#para)
+    h2.logo-text.ion-text-center
+      ion-label(color='danger') 艾點
+      | 軟體整合設計有限公司
+    .img-container
+      img.logo-img(src='./assets/images/logo.png')
+  .my-content
+    .ion-padding-start
+      .line.ion-text-left ⚡ App已經上傳至蘋果App Store, Google Play
+      br
+      .line.ion-text-left ⚡ 需要2至3周️審核
+      br
+      .line.ion-text-left ⚡ App經由Apple審核後很快會上線
+      br
+    .line.img-container((click)="appDownloadClicked()")
+      img(src='https://i.imgur.com/UPe5bbD.png')
+    .apple-img-container((click)="appDownloadClicked()")
+      img(src='https://i.imgur.com/7lY3FCr.png')
+    .line.img-container((click)="appDownloadClicked()")
+      img(src='https://i.imgur.com/UPe5bbD.png')
+    .apple-img-container((click)="appDownloadClicked()")
+      img(src='https://i.imgur.com/7lY3FCr.png')
+    .space
